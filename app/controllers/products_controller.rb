@@ -40,7 +40,7 @@ class ProductsController < ApplicationController
   private
 
   def product_params
-      params.permit(:title, :description, :price, :image_url, :quantity, :user_id)
+      params.permit(:title, :description, :price, :image_url, :quantity, :category)
   end
 
   def render_404
