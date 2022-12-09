@@ -12,7 +12,7 @@ class ProductsController < ApplicationController
   # GET /products/:id
   def show
     product = Product.find(params[:id])
-    render json: product, to_json: includes
+    render json: product
   end
 
   # POST /products
